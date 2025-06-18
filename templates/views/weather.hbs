@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    {{>header}}
+    <div class="main-container">
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+        <hr>
+        <div class="weather-container">
+            <p class="location"></p>
+            <p class="date"></p>
+            <p class="temperature"></p>
+            <div class="weather-parameters-container">
+                <div>
+                    <p class="parameter sunrise"></p>
+                    <p class="value sunrise"></p>
+                </div>
+                <div>
+                    <p class="parameter humidity"></p>
+                    <p class="value humidity"></p>
+                </div>
+                <div>
+                    <p class="parameter visibility"></p>
+                    <p class="value visibility"></p>
+                </div>
+                <div>
+                    <p class="parameter sunset"></p>
+                    <p class="value sunset"></p>
+                </div>
+                <div>
+                    <p class="parameter pressure"></p>
+                    <p class="value pressure"></p>
+                </div>
+                <div>
+                    <p class="parameter wind"></p>
+                    <p class="value wind"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="/js/script.js"></script>
+</body>
+</html>
